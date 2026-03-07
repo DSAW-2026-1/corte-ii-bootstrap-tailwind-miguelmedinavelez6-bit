@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stats Preview Card Component</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: hsl(233, 47%, 7%);
+    }
+
+    .container {
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .links {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    a {
+      text-decoration: none;
+      background-color: hsl(277, 64%, 61%);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      opacity: 0.85;
+    }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="./bootstrap.html">Bootstrap</a>
-    <a href="./tailwind.html">Tailwind</a>
-  </nav>
+  <div class="container">
+    <h1>Stats Preview Card Component</h1>
+    <div class="links">
+      <a href="./bootstrap.html">View Bootstrap Version</a>
+      <a href="./tailwind.html">View Tailwind Version</a>
+    </div>
+  </div>
 </body>
 </html>
